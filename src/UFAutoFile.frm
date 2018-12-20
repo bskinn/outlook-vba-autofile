@@ -69,6 +69,9 @@ Private Sub UserForm_Activate()
     LBxDests.Font.Size = LBxFontSize
     populateListBox rootFld, popDepth
     
+    ' For the first load, move to the top item
+    LBxDests.ListIndex = 0
+    
 End Sub
 
 ' =======================  BUTTONS  ========================
