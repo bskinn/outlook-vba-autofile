@@ -13,15 +13,11 @@ Sub launchBnPFile()
     UFAutoFile.popDepth = 0
     UFAutoFile.LBxFontSize = 9#
     
+    If TypeOf ActiveWindow Is Inspector Then
+        Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
+    End If
+    
     UFAutoFile.Show
-End Sub
-
-Sub launchBnPFileOnInspector()
-    Load UFAutoFile
-    
-    Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
-    
-    launchBnPFile
 End Sub
 
 
@@ -36,15 +32,11 @@ Sub launchClientFile()
     UFAutoFile.Caption = "Select Client"
     UFAutoFile.popDepth = 0
     
+    If TypeOf ActiveWindow Is Inspector Then
+        Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
+    End If
+    
     UFAutoFile.Show
-End Sub
-
-Sub launchClientFileOnInspector()
-    Load UFAutoFile
-    
-    Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
-    
-    launchClientFile
 End Sub
 
 
@@ -59,15 +51,11 @@ Sub launchCollabFile()
     UFAutoFile.Caption = "Select Collaborator"
     UFAutoFile.popDepth = 0
     
+    If TypeOf ActiveWindow Is Inspector Then
+        Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
+    End If
+    
     UFAutoFile.Show
-End Sub
-
-Sub launchCollabFileOnInspector()
-    Load UFAutoFile
-    
-    Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
-    
-    launchCollabFile
 End Sub
 
 
@@ -82,15 +70,11 @@ Sub launchContractorFile()
     UFAutoFile.Caption = "Select Contractor"
     UFAutoFile.popDepth = 1
     
+    If TypeOf ActiveWindow Is Inspector Then
+        Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
+    End If
+    
     UFAutoFile.Show
-End Sub
-
-Sub launchContractorFileOnInspector()
-    Load UFAutoFile
-    
-    Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
-    
-    launchContractorFile
 End Sub
 
 
@@ -105,15 +89,11 @@ Sub launchProjectFile()
     UFAutoFile.Caption = "Select Project"
     UFAutoFile.popDepth = 1
     
+    If TypeOf ActiveWindow Is Inspector Then
+        Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
+    End If
+    
     UFAutoFile.Show
-End Sub
-
-Sub launchProjectFileOnInspector()
-    Load UFAutoFile
-    
-    Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
-    
-    launchProjectFile
 End Sub
 
 
@@ -128,15 +108,11 @@ Sub launchSocietyFile()
     UFAutoFile.Caption = "Select Society"
     UFAutoFile.popDepth = 0
     
+    If TypeOf ActiveWindow Is Inspector Then
+        Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
+    End If
+    
     UFAutoFile.Show
-End Sub
-
-Sub launchSocietyFileOnInspector()
-    Load UFAutoFile
-    
-    Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
-    
-    launchSocietyFile
 End Sub
 
 
@@ -151,15 +127,11 @@ Sub launchVendorFile()
     UFAutoFile.Caption = "Select Vendor"
     UFAutoFile.popDepth = 1
     
+    If TypeOf ActiveWindow Is Inspector Then
+        Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
+    End If
+    
     UFAutoFile.Show
-End Sub
-
-Sub launchVendorFileOnInspector()
-    Load UFAutoFile
-    
-    Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
-    
-    launchVendorFile
 End Sub
 
 
