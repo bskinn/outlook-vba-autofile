@@ -11,7 +11,7 @@ Sub launchBnPFile()
     UFAutoFile.storeName = "Outlook"
     UFAutoFile.Caption = "Select Proposal Folder"
     UFAutoFile.popDepth = 0
-    UFAutoFile.LBxFontSize = 9#
+    UFAutoFile.LBxFontSize = 8#
     
     If TypeOf ActiveWindow Is Inspector Then
         Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem

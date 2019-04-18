@@ -25,6 +25,7 @@ Public baseFldPath As String
 Public LBxFontSize As Double
 Public popDepth As Long
 
+
 ' =======================  USERFORM  ========================
 
 Private Sub UserForm_Initialize()
@@ -110,6 +111,12 @@ Private Sub BtnFile_Click()
     
     Unload UFAutoFile
     
+End Sub
+
+' =======================  LISTBOX  ========================
+
+Private Sub LBxDests_DblClick(ByVal Cancel As MSForms.ReturnBoolean)
+    BtnFile_Click
 End Sub
 
 ' ====================  PRIVATE METHODS  =====================
