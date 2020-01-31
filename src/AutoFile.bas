@@ -49,7 +49,7 @@ Sub launchCollabFile()
     UFAutoFile.baseFldPath = "zArchive\Collaborators"
     UFAutoFile.storeName = "Outlook"
     UFAutoFile.Caption = "Select Collaborator"
-    UFAutoFile.popDepth = 0
+    UFAutoFile.popDepth = 1
     
     If TypeOf ActiveWindow Is Inspector Then
         Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
