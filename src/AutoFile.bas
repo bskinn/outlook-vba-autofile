@@ -1,7 +1,7 @@
 Attribute VB_Name = "AutoFile"
 Option Explicit
 
-' =============  B&P  ==============
+' =============  Archived B&P  ==============
 
 Sub launchBnPFile()
     Load UFAutoFile
@@ -19,6 +19,28 @@ Sub launchBnPFile()
     
     UFAutoFile.Show
 End Sub
+
+
+' =============  Current B&P  ==============
+
+Sub launchActiveBnPFile()
+    Load UFAutoFile
+    
+    UFAutoFile.catAddStr = "B&P"
+    UFAutoFile.baseFldPath = "Inbox\2. General To-Do"
+    UFAutoFile.storeName = "Outlook"
+    UFAutoFile.Caption = "Select Active Proposal Folder"
+    UFAutoFile.popDepth = 0
+    UFAutoFile.LBxFontSize = 8#
+    
+    If TypeOf ActiveWindow Is Inspector Then
+        Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
+    End If
+    
+    UFAutoFile.Show
+End Sub
+
+
 
 
 ' ===========  CLIENTS  ===========
