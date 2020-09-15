@@ -11,7 +11,7 @@ Sub launchBnPFile()
     UFAutoFile.storeName = "Outlook"
     UFAutoFile.Caption = "Select Proposal Folder"
     UFAutoFile.popDepth = 0
-    UFAutoFile.LBxFontSize = 8#
+    UFAutoFile.LBxFontSize = 9#
     
     If TypeOf ActiveWindow Is Inspector Then
         Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
@@ -27,11 +27,11 @@ Sub launchActiveBnPFile()
     Load UFAutoFile
     
     UFAutoFile.catAddStr = "B&P"
-    UFAutoFile.baseFldPath = "Inbox\2. General To-Do"
+    UFAutoFile.baseFldPath = "Inbox\4. Active B&P"
     UFAutoFile.storeName = "Outlook"
     UFAutoFile.Caption = "Select Active Proposal Folder"
     UFAutoFile.popDepth = 0
-    UFAutoFile.LBxFontSize = 8#
+    UFAutoFile.LBxFontSize = 9#
     
     If TypeOf ActiveWindow Is Inspector Then
         Set UFAutoFile.tgtObj = ActiveInspector.CurrentItem
